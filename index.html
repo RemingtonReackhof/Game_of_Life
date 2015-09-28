@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>
+            Game of Life
+        </title>
+        <!--Favicon and Font-->
+        
+        <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        
+        <!-- jQuery Library -->
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+        <!-- Bootstrap Libraries -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+        <!-- Project JavaScript and Stylesheet Files -->
+        <script type="text/javascript" src="gol.js"></script>
+        <link type="text/css" rel="stylesheet" href="styles.css" />
+    </head>
+    
+    <body class="container">
+
+        <h2 align="center">Four's a Crowd: Conway's Game of Life</h2>
+
+        <canvas id="grid" height="500px" width="1000px" style="cursor:crosshair"></canvas>
+        
+        <div id="button-wrapper" align="left">
+            <button id="still-life-btn" class="button_draw">Draw Stillife</button>
+            <form>
+                <select id="still-life-select">
+                    <option value="Block" selected>Block</option>
+                    <option value="Beehive" >Beehive</option>
+                    <option value="Loaf" >Loaf</option>
+                    <option value="Boat" >Boat</option>
+                </select>
+            </form>
+            <button id="oscillator-btn" class="button_draw">Draw Oscillator</button>
+            <form>
+                <select id="oscillator-select">
+                    <option value="Blinker" selected>Blinker</option>
+                    <option value="Toad" >Toad</option>
+                    <option value="Beacon" >Beacon</option>
+                    <option value="Pulsar" >Pulsar</option>
+                </select>
+            </form>
+            <button id="spaceship-btn"  class="button_draw">Draw Spaceship</button>
+            <form>
+                <select id="spaceship-select">
+                    <option value="Glider" selected>Glider</option>
+                    <option value="Lwss" >Lwss</option>
+                </select>
+            </form>
+            
+            <button id="special-btn" class="button_draw">Draw Special</button>
+            <form>
+                <select id="special-select">
+                    <option value="R-Pentomino" selected>R-Pentomino</option>
+                    <option value="Glider-Gun" >Glider Gun</option>
+                </select>
+            </form>
+            <p></p>
+            <p></p>
+            <p></p>
+            <button id="speed-up" class="button_speedup">Speed Up</button>
+            <button id="slow-down" class="button_slowdown">Slow Down</button>
+            <button id="color-scheme-btn" class="button_color">Select Color Scheme</button>
+            <form>
+                <select id="color-scheme-select">
+                    <option value="Default" selected>Default</option>
+                    <option value="Cool" >Vivid</option>
+                    <option value="Go-Blue" >Go Blue!</option>
+                </select>
+            </form>
+            
+            <button id="start-game" class="button_start">Start</button>
+            <button id="stop-game" class="button_stop">Stop</button>
+            <button id="clear-game" class="button_clear">Clear</button>
+            
+        </div>
+    </body>
+</html>
